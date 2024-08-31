@@ -1,5 +1,5 @@
 use crate::models::User;
-use crate::utils::auth_utils::create_jwt;
+use crate::utils::create_jwt;
 use actix_web::{web, Error, HttpResponse};
 use serde::Deserialize;
 use sqlx::PgPool;
