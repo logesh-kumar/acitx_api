@@ -1,0 +1,20 @@
+POST http://localhost:8080/api/register HTTP/1.1
+content-type: application/json
+
+{
+    "username": "logesh",
+    "password": "logesh"
+}
+
+###
+POST http://localhost:8080/api/login HTTP/1.1
+content-type: application/json
+
+{
+    "username": "logesh",
+    "password": "logesh"
+}
+
+###
+GET http://localhost:8080/api/protected HTTP/1.1
+authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsb2dlc2giLCJleHAiOjE3MjUyMTYzNzN9.1NPaqs4O44Yst_m_kW5NDNAejxONsIHab5B5A1BB0kM
